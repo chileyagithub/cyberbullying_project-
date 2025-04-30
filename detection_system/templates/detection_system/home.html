@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    {% load static %}
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{% static 'detection_system/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cyberbullying Detection System</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Our mission is to eliminate Cyberbullying world wide.</p>
+            <p>Cyberbullying Detection System is a System that detect public posts that contains 
+               agressive language or insults such as idiot, hates, f**k you and other insults. Therefore, 
+                this system will help to prevent or mitigate Cyberbullying among Zambian citizens however, our
+                mission is to eliminate Cyberbullying among citizens and globly.
+
+            </p>
+        </section>
+
+        <section class="links">
+            <a href="{% url 'toxic_messages' %}">Go to Toxic Messages Page</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyberbullying Project</p>
+    </footer>
+</body>
+</html>

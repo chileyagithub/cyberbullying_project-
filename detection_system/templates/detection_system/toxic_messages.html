@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Toxic Messages</title></head>
+<body>
+    <h1>Detected Toxic Messages</h1>
+    <ul>
+        {% for msg in messages %}
+        <li>{{ msg.text }} - {{ msg.created_at }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
